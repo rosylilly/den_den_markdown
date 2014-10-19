@@ -1,5 +1,2 @@
-require "den_den_markdown/version"
-
-module DenDenMarkdown
-  # Your code goes here...
-end
+require 'den_den_markdown/version'
+require 'den_den_markdown/processor'

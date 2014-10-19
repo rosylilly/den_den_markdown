@@ -18,6 +18,12 @@ Gem::Specification.new do |spec|
   spec.test_files    = spec.files.grep(%r{^(test|spec|features)/})
   spec.require_paths = ["lib"]
 
-  spec.add_development_dependency "bundler", "~> 1.7"
-  spec.add_development_dependency "rake", "~> 10.0"
+  spec.add_development_dependency "bundler", '~> 1.7'
+  spec.add_development_dependency "rake", '~> 10.0'
+  spec.add_development_dependency 'minitest', '~> 5.4.2'
+  spec.add_development_dependency 'minitest-power_assert', '~> 0.0.3'
+  spec.add_development_dependency 'minitest-reporters', '~> 1.0.6'
+
+  spec.add_dependency 'html-pipeline'
+  spec.add_dependency 'redcarpet'
 end
