@@ -1,0 +1,13 @@
+詳しくは[こちら](http://example.com/)をごらんください。
+
+詳しくは[こちら](http://example.com/ "タイトル")をごらんください。
+
+詳しくは[こちら][example]をごらんください。
+
+[example]: http://example.com/
+
+<http://example.com>
+
+<info@example.com>
+
+私のTwitterアカウントは<@lost_and_found>です。

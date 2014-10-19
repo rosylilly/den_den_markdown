@@ -12,9 +12,10 @@ describe DenDenMarkdown::Processor do
 
       it "#{name}" do
         orig = File.read(spec + '/orig.mkd')
-        result = File.read(spec + '/result.html')
+        result = File.read(spec + '/result.html').gsub("\n\n", "\n")
+        output = call(orig)[:output].to_s.gsub("\n\n", "\n")
 
-        assert { call(orig)[:output].to_s == result }
+        assert_equal result, output
       end
     end
   end
